@@ -13,6 +13,17 @@ public:
 
 	virtual ~Hotel() {}
 
+	//Total Rooms in Hotel
+	std::vector<Room> Rooms;
+
+	//Access Modifier
+protected:
+
+	//Member Variables (Allowed only for child classes)
+	int HotelId;
+	std::string HotelName;
+	Address HotelAddress;
+
 	
 
 };

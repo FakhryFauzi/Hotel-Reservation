@@ -125,9 +125,13 @@
   <ItemGroup>
     <ClCompile Include="Admin.cpp" />
     <ClCompile Include="DoubleRoom.cpp" />
+    <ClCompile Include="Guest.cpp" />
     <ClCompile Include="Hotel.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Reservation.cpp" />
     <ClCompile Include="Room.cpp" />
     <ClCompile Include="SingleRoom.cpp" />
+    <ClCompile Include="Suite.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Address.hpp" />
@@ -135,9 +139,12 @@
     <ClInclude Include="Date.hpp" />
     <ClInclude Include="DoubleRoom.hpp" />
     <ClInclude Include="Globals.hpp" />
+    <ClInclude Include="Guest.hpp" />
     <ClInclude Include="Hotel.hpp" />
+    <ClInclude Include="Reservation.hpp" />
     <ClInclude Include="Room.hpp" />
     <ClInclude Include="SingleRoom.hpp" />
+    <ClInclude Include="Suite.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
