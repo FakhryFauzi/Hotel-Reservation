@@ -35,8 +35,48 @@ public:
 struct Date
 {
 public:
+
+	//Default Constructor
+	Date() : Month(0), Day(0), Year(0){}
+
+	//Constructor: Three Arguments
+	explicit Date(
+		int _Month
+		, int _Day
+		, int _Year) :
+		Month(_Month)
+		, Day(_Day)
+		, Year(_Year)
+	{
+
+	}
 	//Dates are represented as MM/DD/YYYY 
 	int Month;
 	int Day;
 	int Year;
+
+	//Function to ensure Date is valid data
+	bool IsValid() const
+	{
+		return (Month != 0 && Day != 0 && Year == 2019 || Year == 2020);
+	}
+
+	//Overload == operator for equality
+	bool operator==(const Date& Other)const
+	{
+		return(
+			Month == Other.Month
+			&& Day == Other.Day
+			&& Year == Other.Year
+			);
+	}
+
+	//Overload < operator for use in std::map
+	bool operator<(const Date& Other) const
+	{
+		if (Month != Other.Month) return Month < Other.Month;
+		else if (Day != Other.Day) return Day < Other.Day;
+		else if (Year != Other.Day) return Year < Other.Day;
+		else return false;
+	}
 };
