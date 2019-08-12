@@ -2,7 +2,10 @@
 
 Admin::Admin() 
 {
-
+	//Populate Hotel with 3 rooms
+	Rooms.push_back(Room(241, RoomType::SINGLE));
+	Rooms.push_back(Room(105, RoomType::DOUBLE));
+	Rooms.push_back(Room(115, RoomType::SINGLE));
 }
 
 Admin::~Admin()
