@@ -5,7 +5,20 @@
 class Guest
 {
 public:
+
+	//Constructor
 	Guest();
+
+	//Constructor: Six Arguments
+	Guest(
+		int _GuestID
+		, const std::string& _Name
+		, Date& _DOB
+		, const std::string& _Email
+		, const std::string& _Sex
+		, bool _IsAdult
+	);
+
 	~Guest();
 
 private:

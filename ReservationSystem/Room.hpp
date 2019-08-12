@@ -10,7 +10,20 @@
 class Room
 {
 public:
+	//Default Constructor
 	Room();
+
+	//Constructor: Two Arguments
+	Room(
+		int RmNumber
+		, RoomType TypeOfRoom) :
+		RoomNumber(RmNumber)
+		, Type(TypeOfRoom)
+		, Status(RoomStatus::VACANT)
+		, MaxGuests(6)
+	{}
+
+	//Destructor
 	virtual  ~Room();
 
 	//Function to book a room
