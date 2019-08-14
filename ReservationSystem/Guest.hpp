@@ -1,34 +1,36 @@
 #pragma once
 
-#include <string>
+#include <string>	// std::string
 #include "Date.hpp"
+
 class Guest
 {
+
 public:
 
-	//Constructor
+	// Constructor
 	Guest();
 
-	//Constructor: Six Arguments
+	// Constructor: Six Arguments
 	Guest(
-		int _GuestID
-		, const std::string& _Name
-		, Date& _DOB
-		, const std::string& _Email
-		, const std::string& _Sex
-		, bool _IsAdult
-	);
+		int _GuestID					// Guest ID
+		, const std::string _Name		// Guest Name
+		, Date _DOB					// Date of Birth
+		, const std::string _Email		// Email
+		, const std::string _Sex		// Sex
+		, bool _IsAdult);				// Is this guest an adult?
 
+	// Destructor
 	~Guest();
 
 private:
-	//Member Variable
+
+	// Member Variables
 	int GuestID;
 	std::string Name;
-	std::string Email;
 	Date DateOfBirth;
+	std::string Email;
 	std::string Sex;
 	bool IsAdult;
-
 };
 
